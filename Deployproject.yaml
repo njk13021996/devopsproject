@@ -1,0 +1,6 @@
+---
+- hosts: Slave
+  become_user: root
+  tasks:
+  - name: Deploy docker container in slave
+    docker_container: name=devopsproject image=njk13021996/devopsimage

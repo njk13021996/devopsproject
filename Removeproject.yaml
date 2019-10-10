@@ -1,0 +1,6 @@
+---
+- hosts: Slave
+  become_user: root
+  tasks:
+  - name: Remove docker container in slave
+    docker_container: name=devopsproject state=absent
