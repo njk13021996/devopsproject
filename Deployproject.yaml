@@ -3,4 +3,4 @@
   become_user: root
   tasks:
   - name: Deploy docker container in slave
-    docker_container: name=devopsproject image=njk13021996/devopsimage
+    docker_container: name=devopsproject ports=80:80 image=njk13021996/devopsimage:1
